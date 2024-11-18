@@ -1,0 +1,52 @@
+body{
+    background-color: #F7ECDE;
+}
+
+
+@font-face {
+    font-family: 'pacificoh1';
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+h1{
+    font-family: 'pacificoh1';
+    font-size: 3.125rem;
+    position: relative;
+    z-index: 1;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 25%;
+    background-color: #FEC260;
+    z-index: -555555;
+    transition: height .5s;
+}
+h1:hover::after{
+    height: 55%;
+}
+.form{
+    border-top:2px dotted ;
+    border-bottom: 2px dotted ;
+    
+}
+.color{
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    
+}
+span i{
+    color: #b5ac49 !important;
+    background: linear-gradient(to right, #3ca55c, #b5ac49) !important;
+    background-clip: text;
+}
+label span{
+    font-size: .9rem ;
+}
+.colors{
+    color: #b5ac49;
+}

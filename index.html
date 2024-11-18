@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============= bootstrap =========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- =========== Font Awesome ========== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ============= google Fonts ======== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <div class="content">
+            <div
+              class="text py-5 d-flex justify-content-center align-items-center"
+            >
+              <h1 class="text">Bookmarker</h1>
+            </div>
+            <div class="form">
+              <div class="fs-4 fw-bold text-center py-3">
+                <p class="d-inline-block color">
+                  <i class="fa-solid fa-bookmark text-success"></i>
+
+                  Bookmark your favorite sites
+
+                  <i class="fa-solid fa-bookmark colors"></i>
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
+                  <i class="fa-solid fa-bookmark"></i>
+                  <span class="fw-bold ms-2">Site Name</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="BookmarkName"
+                  placeholder="Bookmark Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="SiteURL" class="form-label"
+                  ><i class="fa-solid fa-link"></i
+                  ><span class="fw-bold ms-2">Site URL</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="SiteURL"
+                  placeholder="Site URL"
+                />
+              </div>
+              <div class="button text-center my-4">
+                <button
+                  onclick="addproduct()"
+                  id="addAdd"
+                  type="button"
+                  class="btn btn-danger px-5"
+                >
+                  Submit
+                </button>
+                <!-- <button onclick="updateData()" id="btnUpdate"  type="button" class="btn btn-danger px-5 d-none">
+                  Update
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container text-center">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider" id="rowData"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============= Font Awesome ========== -->
+    <script src="js/all.min.js"></script>
+    <!-- ============= bootstrap =========== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ============= custom javascript =========== -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
